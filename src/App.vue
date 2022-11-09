@@ -2,8 +2,10 @@
 import SidebarComponent from '@/components/SidebarComponent.vue'
 </script>
 <template>
-  <SidebarComponent/>
-  <router-view/>
+      <SidebarComponent/>
+      <div class="overflow-auto mx-4 mt-5">
+        <router-view/>
+      </div>
 </template>
 <style>
 </style>
