@@ -4,7 +4,7 @@
       <div>
         <Button id="menu" icon="pi pi-align-justify" @click="visibleLeft = true" class="mr-2"/>
       </div>
-      <div>
+      <div>¬
         <Button id="user" icon="pi pi-user" class="p-button-rounded p-button-info"/>
         <Sidebar v-model:visible="visibleLeft" :baseZIndex="10000" position="left">
           <h3>VUE PROJECT</h3>
@@ -29,7 +29,7 @@ const items = ref([
       {
         label: 'Criar usuário',
         icon: 'pi pi-user-plus',
-        to: '/teste'
+        to: '/usuario/cadastro'
       },
       {
         label: 'Lista usuários',
@@ -55,18 +55,15 @@ const items = ref([
     ]
   }
 ])
-
 </script>
 <style scoped>
 #top-bar {
-  background-color: #2f3339;
+  background-color: #2F3339;
 }
-
 #user {
   background-color: white;
   color: black;
 }
-
 #menu {
   background-color: white;
   color: black;
